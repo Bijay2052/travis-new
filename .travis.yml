@@ -1,0 +1,9 @@
+language: alpine
+
+services: - docker
+
+before_install:
+  - docker build -t test:v1 .
+  - docker images
+  - docker run -d -p 8000:80 test:v1
+  - docker ps 
