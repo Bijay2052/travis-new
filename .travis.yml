@@ -1,7 +1,4 @@
-matrix:
-  include:
-    - language: html
-    - language: php
+language: php
 
 services: - docker
 
